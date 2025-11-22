@@ -4,14 +4,14 @@ export const metadataOverrides = {
   other: {
     'fc:miniapp': JSON.stringify({
       version: 'next',
-      imageUrl: `${baseUrl}${imageRelativePath}`,
+      imageUrl: '$$imageUrl$$',
       button: {
-        title,
+        title: '$$title$$',
         action: {
           type: 'launch_miniapp',
-          name: title,
-          url: baseUrl,
-          splashImageUrl: `${baseUrl}/splash.png`,
+          name: '$$title$$',
+          url: '$$new URL(baseUrl)$$',
+          splashImageUrl: '$$new URL(baseUrl)$$/splash.png',
           splashBackgroundColor: '#ffffff',
         },
       },
