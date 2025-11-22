@@ -4,7 +4,7 @@ export const metadataOverrides = {
   other: {
     'fc:miniapp': JSON.stringify({
       version: 'next',
-      imageUrl,
+      imageUrl: `${baseUrl}${imageRelativePath}`,
       button: {
         title,
         action: {
