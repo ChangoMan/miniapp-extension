@@ -4,7 +4,7 @@ export const preContent = `
 function buildMiniappEmbed(imageUrl: string, imageRelativePath: string, title: string, baseUrl: string): string {
   return JSON.stringify({
     version: 'next',
-    imageUrl,
+    imageUrl: baseUrl + "/feed-preview.png",
     button: {
       title,
       action: {
